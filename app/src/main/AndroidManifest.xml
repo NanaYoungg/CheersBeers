@@ -13,13 +13,15 @@
         android:roundIcon="@mipmap/beer"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeerList">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.DetailActivity"/>
     </application>
 
 </manifest>
