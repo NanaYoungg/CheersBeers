@@ -1,9 +1,7 @@
 package com.example.beerlist.adapter
 
-import android.R.attr.src
 import android.content.Context
 import android.content.Intent
-import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,9 +57,9 @@ class DataAdpter(private var dataList: List<BeerData>, private val context: Cont
         var mBeerImage: ImageView
 
         init {
-            mBeerName=itemLayoutView.findViewById(R.id.tv_name)
-            mBeerTagline=itemLayoutView.findViewById(R.id.tv_tagline)
-            mBeerImage=itemLayoutView.findViewById(R.id.iv_img)
+            mBeerName=itemLayoutView.findViewById(R.id.beer_name_tv)
+            mBeerTagline=itemLayoutView.findViewById(R.id.beer_tagline_tv)
+            mBeerImage=itemLayoutView.findViewById(R.id.beer_lmg_iv)
 
         }
 

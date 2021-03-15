@@ -1,4 +1,4 @@
-package com.example.beerlist.retrofit
+package com.example.beerlist.network
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient

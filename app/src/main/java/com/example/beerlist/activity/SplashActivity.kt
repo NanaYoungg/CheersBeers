@@ -20,7 +20,7 @@ class SplashActivity  : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         //이미지뷰에 GIF
-        val imageView: ImageView = findViewById(R.id.iv_splash)
+        val imageView: ImageView = findViewById(R.id.splash_gif_iv)
         Glide.with(this).load(R.drawable.splash_beer_gif).into(imageView)
 
         //delay를 위한 handler

@@ -8,7 +8,8 @@ data class BeerData(
     @SerializedName("tagline")  //간단설명
     val tagline: String,
     @SerializedName("image_url") //이미지
-    val image_url: String
-
+    val image_url: String,
+    @SerializedName("description ") //내용
+    val description : String
 
 )

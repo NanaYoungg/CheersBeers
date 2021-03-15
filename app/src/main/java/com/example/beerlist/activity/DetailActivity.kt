@@ -1,6 +1,5 @@
 package com.example.beerlist.activity
 
-import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -17,16 +16,16 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         //어댑터에 PutExtra값 받기
-        val mName: TextView = findViewById(R.id.tv_dtail_name)
-        val mImage: ImageView = findViewById(R.id.iv_detail_image)
+        val name: TextView = findViewById(R.id.dtail_beer_name_tv)
+        val image: ImageView = findViewById(R.id.detail_beer_iv)
 
-        var name = intent.getStringExtra("name")
-        var image = intent.getStringExtra("image")
+        var mName = intent.getStringExtra("name")
+        var mImage = intent.getStringExtra("image")
 
         //이름
-        mName.setText(name)
+        name.setText(mName)
         //사진
-        Glide.with(this).load(image).into(mImage)
+        Glide.with(this).load(mImage).into(image)
 
 
     }

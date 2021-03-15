@@ -18,7 +18,7 @@
 
 
             <ImageView
-                android:id="@+id/iv_detail_image"
+                android:id="@+id/detail_beer_iv"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
@@ -30,7 +30,7 @@
                 android:background="@color/VeryLightGrey" />
 
             <TextView
-                android:id="@+id/tv_dtail_name"
+                android:id="@+id/dtail_beer_name_tv"
                 style="@style/customTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:text="name" />
 
             <TextView
-                android:id="@+id/tv_dtail_description"
+                android:id="@+id/dtail_beer_description_tv"
                 style="@style/customNameText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

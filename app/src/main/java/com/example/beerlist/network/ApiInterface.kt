@@ -1,4 +1,4 @@
-package com.example.beerlist.retrofit
+package com.example.beerlist.network
 
 import com.example.beerlist.model.BeerData
 import retrofit2.Call
@@ -9,5 +9,5 @@ interface ApiInterface {
     //https://api.punkapi.com/v2/beers
 
     @GET("beers")
-    fun getPhotos(): Call<List<BeerData>>
+    fun getBeers(): Call<List<BeerData>>
 }

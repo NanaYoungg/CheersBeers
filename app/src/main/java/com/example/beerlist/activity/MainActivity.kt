@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.beerlist.R
 import com.example.beerlist.adapter.DataAdpter
 import com.example.beerlist.model.BeerData
-import com.example.beerlist.retrofit.ApiClient
+import com.example.beerlist.network.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView = findViewById(R.id.recycler_view)
+        recyclerView = findViewById(R.id.beer_main_recycler_view)
         //어댑터 설정
         recyclerView.adapter = DataAdpter(dataList, this)
         //LinearLayoutManager
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getBeerData() {
         //endpoint 호출
-        val call: Call<List<BeerData>> = ApiClient.getClient.getPhotos()
+        val call: Call<List<BeerData>> = ApiClient.getClient.getBeers()
         call.enqueue(object : Callback<List<BeerData>> {
 
             //데이터가 받아지면
